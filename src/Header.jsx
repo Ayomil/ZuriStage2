@@ -1,10 +1,12 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import "./Header.css";
 
 function FullHeader(){
   return (
     <>
       <SearchBar />
+      <BckgroundImg/>
     </>
   );
 };
@@ -27,17 +29,36 @@ function SearchBar(){
 // });
 // }
 
-return <div>
-
-<input
-   type="search"
-   placeholder="Search here"
-//    onChange={handleChange}
-//    value={searchInput} 
-/>
-
-</div>
+return (
+  <div>
+    <input
+      id="searchbar"
+      type="search"
+      placeholder="What do you want to watch?"
+      //    onChange={handleChange}
+      //    value={searchInput}
+    />
+  </div>
+);
 
 };
 
-export default fullheader;
+function BckgroundImg(){
+    return (
+      <>
+        <img
+          src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/07/John-Wick-Chapter-4-Poster.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+          style={{
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            transform: "translateY(-47px)",
+            width:"1200px",
+            height:"100&"
+          }}
+        />
+      </>
+    );
+};
+
+export default FullHeader;
