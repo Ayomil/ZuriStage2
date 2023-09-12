@@ -1,5 +1,6 @@
+import React from 'react';
 import { useState } from 'react';
-import fullheader from "./Header";
+import FullHeader from './Header';
 import './App.css'
 
 
@@ -7,10 +8,9 @@ function App() {
 
   return (
     <>
-    <fullheader/>
-      
+    <FullHeader/>
     </>
   )
-}
+};
 
-export default App
+export default App;

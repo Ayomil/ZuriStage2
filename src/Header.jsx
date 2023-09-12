@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 
-
-export default function fullheader(){
+function FullHeader(){
   return (
     <>
       <SearchBar />
@@ -40,3 +39,5 @@ return <div>
 </div>
 
 };
+
+export default fullheader;
