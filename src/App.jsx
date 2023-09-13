@@ -1,16 +1,20 @@
 import React from 'react';
 import { useState } from 'react';
-import FullHeader from './Header';
 import './App.css'
+import Navbar from './components/navbar';
+import Topcomponent from './components/Topcomponent';
+import Card from './components/Card';
+import requests from './Request';
 
 
-function App() {
+export default function App() {
 
   return (
     <>
-    <FullHeader/>
+      <Navbar />
+      <Topcomponent />
+      <Card title="Top Rated" fetchURL={requests.requestTopRated} />
     </>
-  )
+  );
 };
 
-export default App;

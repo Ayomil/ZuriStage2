@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./main.css";
+import Eachmovie from './Eachmovie';
 import ErrorPage from "./ErrorPage.jsx";
 import App from './App.jsx'
 
@@ -10,10 +12,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
-  // {
-  //   path: "page/",
-  //   element: <Page />,
-  // },
+  {
+    path: "/movies/:id route",
+    element: <Eachmovie />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
