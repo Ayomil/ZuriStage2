@@ -13,14 +13,14 @@ const Card = ({title,fetchURL}) => {
     console.log(movies)
   return (
     <>
-      <h2 className="text-black text-2xl md:text-4xl font-bold text-center m-10">
+      <h2 className="text-black text-2xl md:text-4xl font-bold m-5">
         {title}
       </h2>
-      <div className="relative flex items-center">
-        <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-20">
+      <div>
+        <div className=" items-center justify-center">
           {movies.slice(0, 10).map((item, id) => (
             <div
-              className="w-[360px] sm:w-[500px] md:w-[240px] lg:w-[380px] inline-block cursor-pointer relative p-4 "
+              className="w-[360px] sm:w-[500px] md:w-[240px] lg:w-[380px] cursor-pointer relative p-4 inline-grid"
               data-testid="movie-card"
             >
               <img
