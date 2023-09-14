@@ -16,7 +16,7 @@ const Card = ({title,fetchURL}) => {
         {title}
       </h2>
       <div>
-        <div className=" items-center justify-center">
+        <div className="items-center justify-center">
           {movies.slice(0, 10).map((item, id) => (
             <div
               className="w-[360px] sm:w-[500px] md:w-[240px] lg:w-[380px] cursor-pointer relative p-4 inline-grid"
