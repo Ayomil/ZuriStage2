@@ -10,7 +10,6 @@ const Card = ({title,fetchURL}) => {
         setMovies(response.data.results);
       });
     }, [fetchURL]);
-    console.log(movies)
   return (
     <>
       <h2 className="text-black text-2xl md:text-4xl font-bold m-5">
