@@ -24,11 +24,11 @@ const Topcomponent = () => {
         <div className="absolute w-full top-[20%] p-4 md:p-8">
             <h1 className="text-3xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="my-4">
-            <button className="border bg-gray-400 text-black border-gray-300 py-2 px-5">
+            {/* <button className="border bg-gray-400 text-black border-gray-300 py-2 px-5">
               Play
-            </button>
+            </button> */}
             <button className="border bg-black text-white border-gray-300 py-2 px-5">
-              Watch Later
+              Watch Trailer
             </button>
           </div>
           <p className="text-gray-400 text-sm">Released: {movie?.release_date}</p>
